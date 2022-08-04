@@ -1,0 +1,59 @@
+:root {
+    --paragraph-color: #F0D9FF;
+}
+
+body {
+    background-color: #EEEEEE;
+    text-align: center;
+    margin: 60px auto;
+    max-width: 800px;
+}
+
+h1 {
+    color: #F94892;
+    font-size: 76px;
+    
+}
+
+h2 {
+    color: #E60965;
+    font-size: 46px;
+}
+
+h3{
+    color: #A267AC;
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about-paragraphs {
+    display: flex;
+    margin-top: 20px 0;
+}
+
+.about-paragraphs p {
+    margin: 10px;
+    text-align: center;
+}
+
+p {
+    background: var(--paragraph-color);
+    color: #FFA1C9;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.email:hover {
+    color: #EB1D36;
+    text-decoration: underline;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #F94C66;
+}
