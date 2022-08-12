@@ -4,9 +4,8 @@
 
 body {
     background-color: #EEEEEE;
-    text-align: center;
     margin: 60px auto;
-    max-width: 800px;
+    max-width: 85%;
 }
 
 h1 {
@@ -29,23 +28,12 @@ a {
     text-decoration: none;
 }
 
-.about-paragraphs {
-    display: flex;
-    margin-top: 20px 0;
-}
-
-.about-paragraphs p {
-    margin: 10px;
-    text-align: center;
-}
-
 p {
     background: var(--paragraph-color);
-    color: #FFA1C9;
-    padding: 20px;
-    border-radius: 4px;
-    font-size: 18px;
-    line-height: 27px;
+    color: #D82148;
+    font-family: 'Kalam';
+    font-weight: 400;
+    text-align: justify;
 }
 
 .email:hover {
@@ -56,4 +44,13 @@ p {
 .back-link:hover {
     text-decoration: underline;
     color: #F94C66;
+}
+
+.hide {
+    display: none;
+}
+
+.icon-hover:hover+.hide {
+    display: block;
+    font-size: xx-small;
 }
