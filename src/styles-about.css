@@ -10,7 +10,10 @@ body {
 
 h1 {
     color: #F94892;
-    font-size: 76px;
+    font-size: 96px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-style: normal;
     
 }
 
@@ -22,6 +25,10 @@ h2 {
 h3{
     color: #A267AC;
     font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
 }
 
 a {
@@ -44,13 +51,4 @@ p {
 .back-link:hover {
     text-decoration: underline;
     color: #F94C66;
-}
-
-.hide {
-    display: none;
-}
-
-.icon-hover:hover+.hide {
-    display: block;
-    font-size: xx-small;
 }

@@ -1,6 +1,8 @@
 :root {
-    --button-color: #FF7F3F;
+    --button-color: #C8004C;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --text-color: #F2EBE9;
+    --branding-color: #F94892;
 }
 
 body {
@@ -13,13 +15,21 @@ h1 {
     font-family: 'Playfair Display';
     font-weight: 700;
     font-style: normal;
-    
 }
 
 .invitation {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.5;
+    padding: 140px 20px;
+    background: #F9F9F9;
+}
+
+.beginning {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 h2 {
@@ -30,31 +40,37 @@ h2 {
 h3 {
     color: #A267AC;
     font-size: 38px;
+    font-weight: 600;
 }
 
 .invitation {
     text-align: center;
 }
 
-button {
-    margin: 20px;
+.btn-warning {
     border-radius: 4px;
-    padding: 20px 15px;
-    text-decoration: none;
-}
-
-.left-button {
-    border: #EA5C2B;
+    border: #FF7F3F;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
     box-shadow: var(--box-shadow);
     background: var(--button-color);
+    color: var(--text-color);
 }
 
-
-.right-button {
-    color: var(--button-color);
-    border: 1px solid var(--button-color);
+.btn-warning:hover {
+    background: #FF7F3F;
+    color: #353332;
 }
 
+.btn-branding-outline {
+    color: var(--branding-color);
+    border: 1px solid var(--branding-color);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+}
 a {
     text-decoration: none;
     color: #E60965;
@@ -72,4 +88,30 @@ a:hover {
     background: #A267AC;
     box-shadow: #A267AC;
     color: white;
+}
+
+.project-desciption {
+    padding: 120px 60px;
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 44px;
+        line-height: 2;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    .invitation {
+        padding: 80px 20px;
+    }
+
+    .project-desciption {
+        padding: 0;
+        text-align: center;
+    }
 }
