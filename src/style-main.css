@@ -3,6 +3,7 @@
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --text-color: #F2EBE9;
     --branding-color: #F94892;
+    --paragraph-color: #F0D9FF;
 }
 
 body {
@@ -39,8 +40,11 @@ h2 {
 
 h3 {
     color: #A267AC;
-    font-size: 38px;
-    font-weight: 600;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
 }
 
 .invitation {
@@ -49,7 +53,7 @@ h3 {
 
 .btn-warning {
     border-radius: 4px;
-    border: #FF7F3F;
+    border: #E60965;
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
@@ -59,8 +63,8 @@ h3 {
 }
 
 .btn-warning:hover {
-    background: #FF7F3F;
-    color: #353332;
+    background: #B2A4FF;
+    color: #262047;
 }
 
 .btn-branding-outline {
@@ -71,6 +75,12 @@ h3 {
     line-height: 27px;
     padding: 15px 30px;
 }
+
+.btn-branding-outline:hover {
+    color: #554994;
+    background-color: #F0DFF7;
+}
+
 a {
     text-decoration: none;
     color: #E60965;
@@ -96,19 +106,47 @@ a:hover {
     text-align: center;
 }
 
+.my-information {
+    background: var(--paragraph-color);
+    color: #D82148;
+    font-family: 'Kalam';
+    font-weight: 400;
+    text-align: justify;
+}
+
+.email:hover {
+    color: #EB1D36;
+    text-decoration: underline;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #F94C66;
+}
+
+.content {
+    text-align: center;
+    padding: 0;
+}
+
+.project-desciption {
+    padding: 120px 60px;
+}
+
 @media (max-width: 900px) {
     h1 {
         font-size: 44px;
-        line-height: 2;
+        line-height: 56px;
     }
 
     h2 {
         font-size: 44px;
     }
 
-    .invitation {
-        padding: 80px 20px;
-    }
+   .invitation {
+       padding: 80px 20px;
+   }
+
 
     .project-desciption {
         padding: 0;
