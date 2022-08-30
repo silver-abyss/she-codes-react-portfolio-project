@@ -46,72 +46,45 @@
     <link href="src\style-main.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Yuliia Yavorska</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="work.html">My works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="m-5 pt-5">
-      <h1 class="text-center">Hi, I am Yuliia Yavorska</h1>
-      <h3 class="text-center">
-        Front-end Developer and Instructional Designer
-      </h3>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <ul>
+          <li>
+            <a href="index.html" title="Homepage"> Home</a>
+          </li>
+          <li class="active">
+            <a href="about.html" title="About Yuliia"> About me</a>
+          </li>
+          <li>
+            <a href="work.html" title="Yuliia's works"> My Works</a>
+          </li>
+          <li>
+            <a href="about.html#contact" title="Contact Yuliia"> Contact me</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="container d-none d-lg-block">
+    <div class="content-container container">
       <div class="row">
-        <div class="col-sm-6">
-          <p class="my-information lead p-3 shadow-lg">
-            <strong>Hi, I'm Yuliia.</strong> I live in Odesa, Ukraine. For the
-            last six years I've been working as an English teacher. Throughout
-            my career, I've noticed that I have always been good with teaching
-            and communication with people. For example, when I was working at
-            English courses, I needed to communicate and manage large groups of
-            people with different age, interest and motivation. I tried to find
-            an approach to everyone and this task was a success because my
-            students performed good results with joyful mood in a friendly
-            atmosphere. <br />I want to develop professionally, study new
-            technologies and approaches. I have great passion to study because I
-            really love learning and every piece of new information is really
-            useful and fascinating. I applied for SheCodes Foundation and now I
-            have a great time learning HTML, CSS and JavaScript. Also, I'm going
-            to be an Instructional Designer to create engaging, effective
-            learning experiences that help people gain the skills needed for
-            success.
-            <br />
-            In my downtime I enjoy reading, cooking, running and playing video
-            games. My favourite ones are Resident Evil, Alan Wake, Control,
-            Hellblade and the Witcher. <br />At the moment I don't have much
-            time for my hobbies because I'm fully devoting myself to studying.
-          </p>
+        <div class="col-lg-6">
+          <div class="content">
+            <h1 class="mb-4">Hi, I'm Yuliia Yavorska</h1>
+            <h2 class="mb-4">Front-end Developer and Instructional Designer</h2>
+            <p class="mb-5">
+              My career started as a philologist, linguist, translator, and teacher.
+              <br />
+              I want to develop professionally and study new technologies. I
+              have always been a very detail-oriented person, and I get a lot of
+              satisfaction from completing tasks well.
+              <br />
+              In my downtime I enjoy reading, cooking, running and playing video
+              games. My favourite ones are Resident Evil, Alan Wake, Control,
+              Grand Theft Auto, Hellblade and the Witcher.
+            </p>
+            <a href="/work.html" class="btn btn-branding">See my projects</a>
+          </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-lg-6">
           <img
             src="src\julia-home.jpg"
             class="yuliia-photo img-fluid rounded"
@@ -119,53 +92,59 @@
         </div>
       </div>
     </div>
-    <div class="container d-none d-lg-block">
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            src="src\carpathian-app.png"
-            class="img-fluid p-2 shadow rounded"
-          />
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work inquiry</h3>
+          <p class="text-muted">Let's work together</p>
         </div>
-        <div class="col-sm-4">
-          <img src="src\weather-app.png" class="img-fluid p-2 shadow rounded" />
-        </div>
-        <div class="col-sm-4">
-          <img
-            src="src\croissant-app.png"
-            class="img-fluid p-2 shadow rounded"
-          />
+        <div>
+          <a
+            href="mailto:ulialovechris@gmail.com"
+            class="btn btn-branding mt-3"
+            title="Contact Yuliia"
+          >
+            Contact me
+          </a>
         </div>
       </div>
-    </div>
-    <div id="contact" class="m-5 text-center">
-      <h2>
-        Contact me 💌
-        <br />
-        <a href="mailto:ulialovechris@gmail.com" class="email-link">
-          ulialovechris@gmail.com</a
+      <div class="d-flex justify-content-center mb-5">
+        <p id="contact" class="text-center">
+          Contact me 💌
+          <br />
+          <a
+            href="mailto:ulialovechris@gmail.com"
+            class="email-link"
+            title="Email Patricia"
+          >
+            ulialovechris@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://www.linkedin.com/in/yuliia-yavorska-5a21a3245/"
+          target="_blank"
         >
-      </h2>
-    </div>
-    <footer class="m-4">
-        <div class="social-links d-flex justify-content-center">
-          <a href="https://www.linkedin.com/in/yuliia-yavorska-5a21a3245/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/silver-abyss" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/silver_abyss/" target="_blank">
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
-          <a href="https://t.me/silver_abyss" target="_blank">
-            <i class="fa-brands fa-telegram"></i>
-          </a>
-          <a href="https://shecodesio.slack.com/archives/D03H5PDGJG2" target="_blank">
-            <i class="fa-brands fa-slack"></i>
-          </a>
-        </div>
-        <p class="text-center mt-3">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/silver-abyss" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/silver_abyss/" target="_blank">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="https://t.me/silver_abyss" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a
+          href="https://shecodesio.slack.com/archives/D03H5PDGJG2"
+          target="_blank"
+        >
+          <i class="fa-brands fa-slack"></i>
+        </a>
+      </div>
+      <p class="text-center mt-3">
         ✌️ This website was coded by Yuliia Yavorska, and is
         <a
           href="https://github.com/silver-abyss/she-codes-react-portfolio-project"
@@ -174,6 +153,6 @@
           open-sourced
         </a>
       </p>
-      </footer>
+    </footer>
   </body>
 </html>
